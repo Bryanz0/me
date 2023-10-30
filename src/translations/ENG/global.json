@@ -79,24 +79,24 @@
         }
     ],
 
-    "proyectsTitle": "Proyects",
+    "projectsTitle": "Projects",
 
-    "proyectsSection":[
+    "projectsSection":[
         {
             "id": 1,
-            "proyectName": "Web Portfolio",
-            "proyectType": "Personal Proyect",
-            "proyectDesc": "This project is about a landing page that tries to take a CV to another level. Mainly, this project was developed with React, the features of this project are internationalization (Language change), dark and light themes. In addition to various types of animations, such as typewriter, progress bar and fade-in animations."
+            "projectName": "Web Portfolio",
+            "projectType": "Personal Project",
+            "projectDesc": "This project is about a landing page that tries to take a CV to another level. Mainly, this project was developed with React, the features of this project are internationalization (Language change), dark and light themes. In addition to various types of animations, such as typewriter, progress bar and fade-in animations."
         },{
             "id": 2,
-            "proyectName": "Data integration and preprocessing service",
-            "proyectType": "Freelance",
-            "proyectDesc": "I developed a data extraction and transmission solution for Sutran (Superintendence of Land Transportation of People, Cargo, and Goods) in Peru. This service efficiently extracts vehicle information from a database within an organization or fleet. Once the data is extracted, it undergoes a transformation process where codes are converted into messages or keywords relevant to the company. Additionally, data cleaning is performed to send only essential information to the endpoint, preventing information overload. The service was developed using JavaScript and Node.js, ensuring resilience and security."
+            "projectName": "Data integration and preprocessing service",
+            "projectType": "Freelance",
+            "projectDesc": "I developed a data extraction and transmission solution for Sutran (Superintendence of Land Transportation of People, Cargo, and Goods) in Peru. This service efficiently extracts vehicle information from a database within an organization or fleet. Once the data is extracted, it undergoes a transformation process where codes are converted into messages or keywords relevant to the company. Additionally, data cleaning is performed to send only essential information to the endpoint, preventing information overload. The service was developed using JavaScript and Node.js, ensuring resilience and security."
         },{
             "id": 3,
-            "proyectName": "Hotel Management System",
-            "proyectType": "Freelance",
-            "proyectDesc": "Developed and designed a comprehensive administrative management system for the Buenaventura Hotel in Ibarra. This system is distinguished by its ability to efficiently manage room status, keep accurate guest records, and its tight integration with a sophisticated billing and payment processing system."
+            "projectName": "Hotel Management System",
+            "projectType": "Freelance",
+            "projectDesc": "Developed and designed a comprehensive administrative management system for the Buenaventura Hotel in Ibarra. This system is distinguished by its ability to efficiently manage room status, keep accurate guest records, and its tight integration with a sophisticated billing and payment processing system."
         }
     ],
 
@@ -131,7 +131,7 @@
     "footerSection":{
         "info1": "And finally, this web page was designed and development by my self with ",
         "info2": "and Free Time",
-        "info3": "Feel free to fork this proyect from my "
+        "info3": "Feel free to fork this project from my "
     }
     
 }

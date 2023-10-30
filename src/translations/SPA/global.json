@@ -76,24 +76,24 @@
         }
     ],
 
-    "proyectsTitle": "Proyectos",
+    "projectsTitle": "Proyectos",
 
-    "proyectsSection":[
+    "projectsSection":[
         {
             "id": 1,
-            "proyectName": "Portafolio Web",
-            "proyectType": "Proyecto Personal",
-            "proyectDesc": "Este proyecto se trata de una landing que trata de llevar un CV a otro nivel. Principalmente, este proyecto fue desarrollado con React, las características de este proyecto son la internacionalización (Cambio de lenguaje), temas oscuro y claro. Además de varios tipos de animaciones, como typewriter, progress bar and fade-in animations."
+            "projectName": "Portafolio Web",
+            "projectType": "Proyecto Personal",
+            "projectDesc": "Este proyecto se trata de una landing que trata de llevar un CV a otro nivel. Principalmente, este proyecto fue desarrollado con React, las características de este proyecto son la internacionalización (Cambio de lenguaje), temas oscuro y claro. Además de varios tipos de animaciones, como typewriter, progress bar and fade-in animations."
         },{
             "id": 2,
-            "proyectName": "Servicio de integración y preprocesamiento de datos",
-            "proyectType": "Freelance",
-            "proyectDesc": "Desarrollé una solución de extracción y transmisión de datos para Sutran (Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías) en Perú. Este servicio extrae eficientemente información del vehículo de una base de datos dentro de una organización o flota. Una vez extraídos los datos, se someten a un proceso de transformación donde los códigos se convierten en mensajes o palabras clave relevantes para la empresa. Además, se realiza una limpieza de datos para enviar solo información esencial al punto final, evitando la sobrecarga de información. El servicio fue desarrollado utilizando JavaScript y Node.js, lo que garantiza resiliencia y seguridad."
+            "projectName": "Servicio de integración y preprocesamiento de datos",
+            "projectType": "Freelance",
+            "projectDesc": "Desarrollé una solución de extracción y transmisión de datos para Sutran (Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías) en Perú. Este servicio extrae eficientemente información del vehículo de una base de datos dentro de una organización o flota. Una vez extraídos los datos, se someten a un proceso de transformación donde los códigos se convierten en mensajes o palabras clave relevantes para la empresa. Además, se realiza una limpieza de datos para enviar solo información esencial al punto final, evitando la sobrecarga de información. El servicio fue desarrollado utilizando JavaScript y Node.js, lo que garantiza resiliencia y seguridad."
         },{
             "id": 3,
-            "proyectName": "Sistema de Gestión Hotelera",
-            "proyectType": "Freelance",
-            "proyectDesc": "Desarrolle y diseñé un sistema integral de gestión administrativa para el  Hotel Buenaventura en Ibarra. Este sistema se distingue por su capacidad para gestionar eficientemente el estado de las habitaciones, llevar un registro preciso de los huéspedes y su estrecha integración con un sofisticado sistema de facturación y procesamiento de pagos"
+            "projectName": "Sistema de Gestión Hotelera",
+            "projectType": "Freelance",
+            "projectDesc": "Desarrolle y diseñé un sistema integral de gestión administrativa para el  Hotel Buenaventura en Ibarra. Este sistema se distingue por su capacidad para gestionar eficientemente el estado de las habitaciones, llevar un registro preciso de los huéspedes y su estrecha integración con un sofisticado sistema de facturación y procesamiento de pagos"
         }
     ],
 

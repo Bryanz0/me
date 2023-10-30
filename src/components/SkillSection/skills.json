@@ -1,0 +1,44 @@
+{
+    "skills-col-1": [
+        {
+            "skillName": "Figma",
+            "percentage": "80%"
+        },{
+            "skillName": "Invision",
+            "percentage": "70%"
+        },{
+            "skillName": "HTML",
+            "percentage": "80%"
+        },{
+            "skillName": "CSS",
+            "percentage": "70%"
+        },{
+            "skillName": "JavaScript",
+            "percentage": "80%"
+        },{
+            "skillName": "PHP",
+            "percentage": "60%"
+        }
+    ],
+    "skills-col-2":[
+        {
+            "skillName": "Java",
+            "percentage": "80%"
+        },{
+            "skillName": "TypeScript",
+            "percentage": "40%"
+        },{
+            "skillName": "Perl",
+            "percentage": "50%"
+        },{
+            "skillName": "MsSQL",
+            "percentage": "70%"
+        },{
+            "skillName": "MongoDB",
+            "percentage": "60%"
+        },{
+            "skillName": "Git",
+            "percentage": "80%"
+        }
+    ]
+}

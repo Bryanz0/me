@@ -5,6 +5,14 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from './views/partials/Header';
+import Animations from './components/Animations';
+import Presentation from './views/Presentation';
+import WorkSection from './views/WorkSection';
+import SkillSection from './views/SkillSection';
+import ProjectsSection from './views/ProjectsSection';
+import ContactSection from './views/ContactSection';
+import Footer from './views/partials/Footer';
+import ToUpButton from './views/partials/ToUpButton';
 
 
 function App() {
@@ -35,6 +43,16 @@ function App() {
           <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" type="text/javascript" />
           </Helmet>
           <Header />
+          <main>
+            <ToUpButton />
+            <Presentation />
+            <WorkSection />
+            <SkillSection />
+            <ProjectsSection />
+            <ContactSection />
+            <Footer />
+            <Animations />
+          </main>
         </div>
       </HelmetProvider>
     </ThemeContext.Provider>
