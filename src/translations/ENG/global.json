@@ -1,0 +1,137 @@
+{
+    "header": {
+        "nav-bar":{
+            "nav-link-1": "Home",
+            "nav-link-2": "Experience",
+            "nav-link-3": "Skills",
+            "nav-link-4": "Projects",
+            "nav-link-5": "Contact"
+        },
+
+        "tooltip-info-mode": "Change Theme",
+
+        "download-button": "Download CV"
+    },
+
+    "presentation":{
+        "sayHello": "Hi, I'm Bryan Zambrano",
+        "professions": ["Software Developer", "UX Designer"],
+        "resume": "I have a diverse background in UX design and full-stack development, allowing me to understand user needs and preferences to create engaging user interfaces.With my expertise in both areas, I'm able to develop high-quality web applications that prioritize user experience and meet business requirements.",
+        "cta-button": "Let's Talk!"
+    },
+
+    "experiencieTitle": "We're I've Worked",
+
+    "workSection":
+        [{
+            "id": 1,
+            "bussinessName": "Banco Guayaquil",
+            "time": "Sep 2023 - Present",
+            "charge": "UX Designer",
+            "tasks": ["I'm in the digital transformation area in charge of the landings redesing task for Banco Guayaquil's bussiness services",
+                        "Working on it..."
+                    ],
+            "tools": [["Figma","https://figma.com"]] 
+        },{
+            "id": 2,
+            "bussinessName": "CGB Satelital",
+            "time": "Feb 2023 - Sep 2023",
+            "charge": "UX Developer",
+            "tasks": [
+                "Visual2 web application design for CGB-Satelital",
+                "Implementation of incident modules and installation of tracking equipment",
+                "Development of Rest APIs for service integrations"
+            ],
+            "tools": [["EJS","https://ejs.co"],["Passport","https://passportjs.org"],["Docker","https://docker.com"],["Redis","https://redis.io"],["Bitbucket","https://bitbucket.org"]]
+        },{
+            "id": 3,
+            "bussinessName": "EPN Tech",
+            "time": "May 2022 - Ene 2023",
+            "charge": "Full-Stack Developer",
+            "tasks": [
+                "Development of secure APIs for the consumption of microservices",
+                "Creation of visual components and layout of the site",
+                "Carrying out unit tests for the correct operation of the application"
+            ],
+            "tools": [["Angular","https://angular.io"],["Springboot","https://spring.io"],["GitLab","https://gitlab.com"],["Jira","https://www.atlassian.com/software/jira"]]
+        },{
+            "id": 4,
+            "bussinessName": "MitSoft",
+            "time": "Apr 2021 - Apr 2022",
+            "charge": "UX Designer",
+            "tasks": [
+                "Design of visual components for web pages",
+                "Planning, development and interpretation of usability test results",
+                "Conducting user satisfaction surveys and analyzing results for decision making"
+            ],
+            "tools": [["Figma","https://figma.com"],["Trello","https://trello.com"]]
+        },{
+            "id": 5,
+            "bussinessName": "Mikampus",
+            "time": "Sep 2020 - Apr 2021",
+            "charge": "IT Service Desk",
+            "tasks": [
+                "Management of multimedia content and updating of platform resources",
+                "Resolution of technical problems within the learning platform",
+                "Customer technical support"
+            ],
+            "tools": [["WordPress","https://wordpress.com"],["LearnDash","https://learndash.com"],["amoCRM","https://amocrm.com"]]
+        }
+    ],
+
+    "proyectsTitle": "Proyects",
+
+    "proyectsSection":[
+        {
+            "id": 1,
+            "proyectName": "Web Portfolio",
+            "proyectType": "Personal Proyect",
+            "proyectDesc": "This project is about a landing page that tries to take a CV to another level. Mainly, this project was developed with React, the features of this project are internationalization (Language change), dark and light themes. In addition to various types of animations, such as typewriter, progress bar and fade-in animations."
+        },{
+            "id": 2,
+            "proyectName": "Data integration and preprocessing service",
+            "proyectType": "Freelance",
+            "proyectDesc": "I developed a data extraction and transmission solution for Sutran (Superintendence of Land Transportation of People, Cargo, and Goods) in Peru. This service efficiently extracts vehicle information from a database within an organization or fleet. Once the data is extracted, it undergoes a transformation process where codes are converted into messages or keywords relevant to the company. Additionally, data cleaning is performed to send only essential information to the endpoint, preventing information overload. The service was developed using JavaScript and Node.js, ensuring resilience and security."
+        },{
+            "id": 3,
+            "proyectName": "Hotel Management System",
+            "proyectType": "Freelance",
+            "proyectDesc": "Developed and designed a comprehensive administrative management system for the Buenaventura Hotel in Ibarra. This system is distinguished by its ability to efficiently manage room status, keep accurate guest records, and its tight integration with a sophisticated billing and payment processing system."
+        }
+    ],
+
+    "contactTitle": "Contact",
+
+    "contactSection": [
+        {
+            "id": 1,
+            "contact": "Email",
+            "contactImage": "/me/images/gmail_logo.png",
+            "contactInfo": "stevenzamdev@gmail.com",
+            "contactLink": "mailto:stevenzamdev@gmail.com?subject=I%20saw%20your%20information&body=Let's%20Talk...%0D%0A"
+        },{
+            "id": 2,
+            "contact": "Linkedin",
+            "contactImage": "/me/images/linkedin_logo.png",
+            "contactInfo": "Bryan Zambrano",
+            "contactLink": "https://www.linkedin.com/in/bryan-steven-zambrano"
+        },{
+            "id": 3,
+            "contact": "Indeed",
+            "contactImage": "/me/images/indeed_logo.png",
+            "contactInfo": "Bryan Zambrano",
+            "contactLink": "https://profile.indeed.com/p/bryanstevenz-4wkxfhc"
+        }
+    ],
+
+    "contactMessage":"Or download my CV for more info...",
+
+    "downloadMessage":"Download!!!",
+
+    "footerSection":{
+        "info1": "And finally, this web page was designed and development by my self with ",
+        "info2": "and Free Time",
+        "info3": "Feel free to fork this proyect from my "
+    }
+    
+}

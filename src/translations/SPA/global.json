@@ -1,0 +1,133 @@
+{
+    "header": {
+        "nav-bar":{
+            "nav-link-1": "Inicio",
+            "nav-link-2": "Experiencia",
+            "nav-link-3": "Destrezas",
+            "nav-link-4": "Proyectos",
+            "nav-link-5": "Contacto"
+        },
+
+        "tooltip-info-mode": "Cambiar Tema",
+
+        "download-button": "Descargar CV"
+    },
+
+    "presentation":{
+        "sayHello": "Hola, Soy Bryan Zambrano",
+        "professions": ["Desarrollador", "Diseñador UX"],
+        "resume": "Tengo experiencia diversa en diseño UX y desarrollo full-stack, permitiendome comprender las necesidades y preferencias de los usuarios para crear interfaces de usuario atractivas. Con mi experiencia en ambas áreas, soy capaz desarrollar aplicaciones web de alta calidad que prioricen la experiencia del usuario y cumplan con los requerimientos del negocio.",
+        "cta-button": "Contáctame!!!"
+    },
+    "experiencieTitle": "Experiencia",
+
+    "workSection":
+        [{
+            "id": 1,
+            "bussinessName": "Banco Guayaquil",
+            "time": "Sep 2023 - Actualidad",
+            "charge": "Diseñador UX",
+            "tasks": ["Estoy en el área de transformación digital a cargo de la tarea de rediseño de landings de servicios para empresas del Banco Guayaquil.",
+                        "Ganando experiencia..."
+                    ],
+            "tools": [["Figma","https://figma.com"]] 
+        },{
+            "id": 2,
+            "bussinessName": "CGB Satelital",
+            "time": "Feb 2023 - Sep 2023",
+            "charge": "Desarrollador UX",
+            "tasks": ["Diseño de la aplicación web Visual2 para CGB-Satelital",
+                        "Implementación de los módulos de incidencias e instalación de equipos de rastreo",
+                        "Desarrollo de APIs Rest para integraciones de servicios"],
+            "tools": [["EJS","https://ejs.co"],["Passport","https://passportjs.org"],["Docker","https://docker.com"],["Redis","https://redis.io"],["Bitbucket","https://bitbucket.org"]] 
+        },{
+            "id": 3,
+            "bussinessName": "EPN Tech",
+            "time": "May 2022 - Ene 2023",
+            "charge": "Desarrollador Full-Stack",
+            "tasks": [
+                "Desarrollo de APIs seguras para al consumo de microservicios",
+                "Creación de componentes visuales y maquetación del sitio",
+                "Realización de pruebas unitarias para el correcto funcionamiento de la aplicación"
+            ],
+            "tools": [["Angular","https://angular.io"],["Springboot","https://spring.io"],["GitLab","https://gitlab.com"],["Jira","https://www.atlassian.com/software/jira"]]
+        },{
+            "id": 4,
+            "bussinessName": "MitSoft",
+            "time": "Abr 2021 - Abr 2022",
+            "charge": "Diseñador UX",
+            "tasks": [
+                "Diseño de componentes visuales para páginas web",
+                "Planificación, desarrollo e interpretación de resultados de pruebas de usabilidad",
+                "Realizaciónd de encuestas de satisfacción de uso y análisis resultados para la toma de desiciones"
+            ],
+            "tools": [["Figma","https://figma.com"],["Trello","https://trello.com"]]
+        },{
+            "id": 5,
+            "bussinessName": "Mikampus",
+            "time": "Sep 2020 - Abr 2021",
+            "charge": "IT Service Desk",
+            "tasks": [
+                "Gestión de contenido multimedia y actualización de reacursos de la plataforma",
+                "Resolución de problemas técnicos dentro de la plataforma de aprendizaje",
+                "Soporte técnico de clientes"
+            ],
+            "tools": [["WordPress","https://wordpress.com"],["LearnDash","https://learndash.com"],["amoCRM","https://amocrm.com"]]
+        }
+    ],
+
+    "proyectsTitle": "Proyectos",
+
+    "proyectsSection":[
+        {
+            "id": 1,
+            "proyectName": "Portafolio Web",
+            "proyectType": "Proyecto Personal",
+            "proyectDesc": "Este proyecto se trata de una landing que trata de llevar un CV a otro nivel. Principalmente, este proyecto fue desarrollado con React, las características de este proyecto son la internacionalización (Cambio de lenguaje), temas oscuro y claro. Además de varios tipos de animaciones, como typewriter, progress bar and fade-in animations."
+        },{
+            "id": 2,
+            "proyectName": "Servicio de integración y preprocesamiento de datos",
+            "proyectType": "Freelance",
+            "proyectDesc": "Desarrollé una solución de extracción y transmisión de datos para Sutran (Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías) en Perú. Este servicio extrae eficientemente información del vehículo de una base de datos dentro de una organización o flota. Una vez extraídos los datos, se someten a un proceso de transformación donde los códigos se convierten en mensajes o palabras clave relevantes para la empresa. Además, se realiza una limpieza de datos para enviar solo información esencial al punto final, evitando la sobrecarga de información. El servicio fue desarrollado utilizando JavaScript y Node.js, lo que garantiza resiliencia y seguridad."
+        },{
+            "id": 3,
+            "proyectName": "Sistema de Gestión Hotelera",
+            "proyectType": "Freelance",
+            "proyectDesc": "Desarrolle y diseñé un sistema integral de gestión administrativa para el  Hotel Buenaventura en Ibarra. Este sistema se distingue por su capacidad para gestionar eficientemente el estado de las habitaciones, llevar un registro preciso de los huéspedes y su estrecha integración con un sofisticado sistema de facturación y procesamiento de pagos"
+        }
+    ],
+
+    "contactTitle": "Contacto",
+
+    "contactSection": [
+        {
+            "id": 1,
+            "contact": "Email",
+            "contactImage": "/me/images/gmail_logo.png",
+            "contactInfo": "stevenzamdev@gmail.com",
+            "contactLink": "mailto:stevenzamdev@gmail.com?subject=Hi%2C%20i%20saw%20your%20information&body=Let's%20Talk...%0D%0A"
+        },{
+            "id": 2,
+            "contact": "Linkedin",
+            "contactImage": "/me/images/linkedin_logo.png",
+            "contactInfo": "Bryan Zambrano",
+            "contactLink": "https://www.linkedin.com/in/bryan-steven-zambrano/"
+        },{
+            "id": 3,
+            "contact": "Indeed",
+            "contactImage": "/me/images/indeed_logo.png",
+            "contactInfo": "Bryan Zambrano",
+            "contactLink": "https://profile.indeed.com/p/bryanstevenz-4wkxfhc"
+        }
+    ],
+
+    "contactMessage":"O descarga mi CV para más información...",
+
+    "downloadMessage":"Descarga!!!",
+
+    "footerSection":{
+        "info1": "Finalmente, esta página fue diseñada y desarrollada por mi con ",
+        "info2": " y tiempo libre",
+        "info3": "Síentete libre de copiar este proyecto desde mi "
+    }
+}
