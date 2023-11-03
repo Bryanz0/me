@@ -33,7 +33,7 @@ function Header() {
                     <ToggleTheme />
                 </div>
 
-                <a className={"action_btn-"+theme} onClick={()=>handleCVButtonClick()} href="/documents/CV_Bryan_Zambrano.pdf" target="_blank" download>
+                <a className={"action_btn-"+theme} onClick={()=>handleCVButtonClick()} href="documents/CV_Bryan_Zambrano.pdf" target="_blank" download>
                     <i className="fa-regular fa-circle-down"></i> {t("header.download-button") }</a>
                 <div className={"toggle_btn-"+theme} id="toggle_btn">
                     <i className="fa-solid fa-bars"></i>
@@ -46,7 +46,7 @@ function Header() {
                     <li><a className={"a-"+theme} onClick={()=>scrollToSection('skills_section')}>{t("header.nav-bar.nav-link-3")}</a></li>
                     <li><a className={"a-"+theme} onClick={()=>scrollToSection('projects_section')}>{t("header.nav-bar.nav-link-4")}</a></li>
                     <li><a className={"a-"+theme} onClick={()=>scrollToSection('contact_section')}>{t("header.nav-bar.nav-link-5")}</a></li>
-                    <li><a className={"action_btn-"+theme} onClick={()=>handleCVButtonClick()} href="/documents/CV_Bryan_Zambrano.pdf" target="_blank" download><i className="fa-regular fa-circle-down"></i> {t("header.download-button")}</a></li>
+                    <li><a className={"action_btn-"+theme} onClick={()=>handleCVButtonClick()} href="documents/CV_Bryan_Zambrano.pdf" target="_blank" download><i className="fa-regular fa-circle-down"></i> {t("header.download-button")}</a></li>
                 </div>
             </div>
         </header>
