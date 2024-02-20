@@ -26,12 +26,12 @@
         [{
             "id": 1,
             "bussinessName": "Banco Guayaquil",
-            "time": "Sep 2023 - Present",
+            "time": "Sep 2023 - Jan 2024",
             "charge": "UX Designer",
-            "tasks": ["I'm in the digital transformation area in charge of the landings redesing task for Banco Guayaquil's bussiness services",
-                        "Working on it..."
+            "tasks": ["I was in the digital transformation area in charge of the landings redesing task for Banco Guayaquil's bussiness services",
+                        "Actively participate in various digital innovation projects to improve customer user experience"
                     ],
-            "tools": [["Figma","https://figma.com"]] 
+            "tools": [["Figma","https://figma.com"],["Notion","https://www.notion.so"]] 
         },{
             "id": 2,
             "bussinessName": "CGB Satelital",

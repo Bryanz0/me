@@ -25,12 +25,12 @@
         [{
             "id": 1,
             "bussinessName": "Banco Guayaquil",
-            "time": "Sep 2023 - Actualidad",
+            "time": "Sep 2023 - Ene 2024",
             "charge": "Diseñador UX",
-            "tasks": ["Estoy en el área de transformación digital a cargo de la tarea de rediseño de landings de servicios para empresas del Banco Guayaquil.",
-                        "Ganando experiencia..."
+            "tasks": ["Estuve en el área de transformación digital a cargo de la tarea de rediseño de landings de servicios para empresas del Banco Guayaquil.",
+                        "Participe activamente en diversos proyectos de innovación digital para mejorar la experiencia de usuario de los clientes"
                     ],
-            "tools": [["Figma","https://figma.com"]] 
+            "tools": [["Figma","https://figma.com",["Notion","https://www.notion.so"]]] 
         },{
             "id": 2,
             "bussinessName": "CGB Satelital",
