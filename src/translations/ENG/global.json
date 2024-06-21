@@ -10,7 +10,8 @@
 
         "tooltip-info-mode": "Change Theme",
 
-        "download-button": "Download CV"
+        "download-button": "Download CV",
+        "download-file": "documents/cv_eng_bz.pdf"
     },
 
     "presentation":{
@@ -65,17 +66,6 @@
                 "Conducting user satisfaction surveys and analyzing results for decision making"
             ],
             "tools": [["Figma","https://figma.com"],["Trello","https://trello.com"]]
-        },{
-            "id": 5,
-            "bussinessName": "Mikampus",
-            "time": "Sep 2020 - Apr 2021",
-            "charge": "IT Service Desk",
-            "tasks": [
-                "Management of multimedia content and updating of platform resources",
-                "Resolution of technical problems within the learning platform",
-                "Customer technical support"
-            ],
-            "tools": [["WordPress","https://wordpress.com"],["LearnDash","https://learndash.com"],["amoCRM","https://amocrm.com"]]
         }
     ],
 
@@ -97,6 +87,11 @@
             "projectName": "Hotel Management System",
             "projectType": "Freelance",
             "projectDesc": "Developed and designed a comprehensive administrative management system for the Buenaventura Hotel in Ibarra. This system is distinguished by its ability to efficiently manage room status, keep accurate guest records, and its tight integration with a sophisticated billing and payment processing system."
+        },{
+            "id":4,
+            "projectName": "Remote Access Control",
+            "projectType": "Freelance",
+            "projectDesc": "Work for Legio Seguridad, designing a new system for integrating security camera and access control services. At the same time, develop integration services through APIs to connect the system with HikVision devices. Among the new functionalities that I implemented were a virtual logbook and remote device control."
         }
     ],
 

@@ -29,7 +29,7 @@ function ContactSection () {
                 </div>
                 <div className="columns is-flex" style={{alignItems: "center", justifyContent: "center"}}>
                   <div className="column">
-                    <p className={"text-color-"+theme} style={{textAlign: "center"}}>{t("contactMessage")} <span><a className={"a-"+theme} style={{display: "table-cell"}} href="documents/CV_Bryan_Zambrano.pdf" target="_blank" download>{t("downloadMessage")}</a></span></p>
+                    <p className={"text-color-"+theme} style={{textAlign: "center"}}>{t("contactMessage")} <span><a className={"a-"+theme} style={{display: "table-cell"}} href={t("header.download-file")} target="_blank" download>{t("downloadMessage")}</a></span></p>
                   </div>
                 </div>
               </div>

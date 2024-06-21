@@ -19,7 +19,7 @@ function ProjectsCollapsibles({ projects }) {
 
     return (
         <>
-            {projects.map((project, index) => (
+            {projects.slice().reverse().map((project, index) => (
                 <div key={project.id} className={"is-fullwidth collapse-" + theme}>
                     <div className={"collapsible collapse-header-" + theme} onClick={() => toggle(index)}>
                         <p style={{ fontWeight: "bold" }}>

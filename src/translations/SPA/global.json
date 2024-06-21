@@ -10,7 +10,8 @@
 
         "tooltip-info-mode": "Cambiar Tema",
 
-        "download-button": "Descargar CV"
+        "download-button": "Descargar CV",
+        "download-file": "documents/cv_spa_bz.pdf"
     },
 
     "presentation":{
@@ -62,17 +63,6 @@
                 "Realización de encuestas de satisfacción de uso y análisis resultados para la toma de desiciones"
             ],
             "tools": [["Figma","https://figma.com"],["Trello","https://trello.com"]]
-        },{
-            "id": 5,
-            "bussinessName": "Mikampus",
-            "time": "Sep 2020 - Abr 2021",
-            "charge": "IT Service Desk",
-            "tasks": [
-                "Gestión de contenido multimedia y actualización de reacursos de la plataforma",
-                "Resolución de problemas técnicos dentro de la plataforma de aprendizaje",
-                "Soporte técnico de clientes"
-            ],
-            "tools": [["WordPress","https://wordpress.com"],["LearnDash","https://learndash.com"],["amoCRM","https://amocrm.com"]]
         }
     ],
 
@@ -94,6 +84,11 @@
             "projectName": "Sistema de Gestión Hotelera",
             "projectType": "Freelance",
             "projectDesc": "Desarrolle y diseñé un sistema integral de gestión administrativa para el  Hotel Buenaventura en Ibarra. Este sistema se distingue por su capacidad para gestionar eficientemente el estado de las habitaciones, llevar un registro preciso de los huéspedes y su estrecha integración con un sofisticado sistema de facturación y procesamiento de pagos"
+        },{
+            "id": 4,
+            "projectName": "Garita Virtual",
+            "projectType": "Freelance",
+            "projectDesc": "Trabajé para Legio Seguridad, diseñando un nuevo sistema de integración de servicios de cámaras de seguridad y control de accesos. A su vez desarrolle servicios de integración a través de APIs para la conexión del sistema con dispositivos HikVision. Dentro de las nuevas funcionalidades que implementé fueron una bitácora virtual y el control de dispositivos de manera remota."
         }
     ],
 

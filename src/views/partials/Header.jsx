@@ -33,7 +33,7 @@ function Header() {
                     <ToggleTheme />
                 </div>
 
-                <a className={"action_btn-"+theme} href="documents/CV_Bryan_Zambrano.pdf" target="_blank" download>
+                <a className={"action_btn-"+theme} href={t("header.download-file")} target="_blank" download>
                     <i className="fa-regular fa-circle-down"></i> {t("header.download-button") }</a>
                 <div className={"toggle_btn-"+theme} id="toggle_btn">
                     <i className="fa-solid fa-bars"></i>
