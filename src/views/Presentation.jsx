@@ -29,7 +29,7 @@ function Presentation() {
                             <div className="buttons">
                                 <a href="https://www.linkedin.com/in/bryan-steven-zambrano/" target="_blank" rel="noopener noreferrer"><button className={"btn_social-" + theme}><i style={{ scale: "1.3" }} className="fa-brands fa-linkedin"></i></button></a>
                                 <a href="https://github.com/Bryanz0" target="_blank" rel="noopener noreferrer"><button className={"btn_social-" + theme}><i style={{ scale: "1.3" }} className="fa-brands fa-github"></i></button></a>
-                                <a href="https://ux-folio-bryanz.ucraft.site/" title="Portafolio de Diseño" target="_blank" rel="noopener noreferrer"><button className={"btn_social-" + theme}><i style={{ scale: "1.3" }} className="fa-regular fa-folder-open"></i></button></a>
+                                <a href="https://www.figma.com/design/7Hl3EwUHwN2K9fs18dK20G/Portafolio?node-id=0-1&t=RjMDFjA1kMzPDag1-1" title="Portafolio de Diseño" target="_blank" rel="noopener noreferrer"><button className={"btn_social-" + theme}><i style={{ scale: "1.3" }} className="fa-regular fa-folder-open"></i></button></a>
                             </div>
                             <button className={"btn-cta-" + theme} onClick={scrollToContact}>{t("presentation.cta-button")}</button>
                         </div>
