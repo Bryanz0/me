@@ -6,13 +6,13 @@ function WorkTabs ({works}){
   const {theme} = useContext(ThemeContext);
 
 
-  const [tabState, setTabState] = useState(1);
+  const sortedWorks = works.slice().sort((a,b)=> b.id - a.id);
+  const [tabState, setTabState] = useState(sortedWorks[0]?.id);
 
   const toogleTab = (index) => {
         setTabState(index);
   }
 
-  const sortedWorks = works.slice().sort((a,b)=> b.id - a.id);
 
   function renderTools(tools){
     if (tools !== undefined){
