@@ -25,24 +25,17 @@
     "workSection":
         [{
             "id": 1,
-            "bussinessName": "Banco Guayaquil",
-            "time": "Sep 2023 - Ene 2024",
+            "bussinessName": "MitSoft",
+            "time": "Abr 2021 - Abr 2022",
             "charge": "Diseñador UX",
-            "tasks": ["Estuve en el área de transformación digital a cargo de la tarea de rediseño de landings de servicios para empresas del Banco Guayaquil.",
-                        "Participe activamente en diversos proyectos de innovación digital para mejorar la experiencia de usuario de los clientes"
-                    ],
-            "tools": [["Figma","https://figma.com",["Notion","https://www.notion.so"]]] 
+            "tasks": [
+                "Diseño de componentes visuales para páginas web",
+                "Planificación, desarrollo e interpretación de resultados de pruebas de usabilidad",
+                "Realización de encuestas de satisfacción de uso y análisis resultados para la toma de desiciones"
+            ],
+            "tools": [["Figma","https://figma.com"],["Trello","https://trello.com"]]
         },{
             "id": 2,
-            "bussinessName": "CGB Satelital",
-            "time": "Feb 2023 - Sep 2023",
-            "charge": "Desarrollador UX",
-            "tasks": ["Diseño de la aplicación web Visual2 para CGB-Satelital",
-                        "Implementación de los módulos de incidencias e instalación de equipos de rastreo",
-                        "Desarrollo de APIs Rest para integraciones de servicios"],
-            "tools": [["EJS","https://ejs.co"],["Passport","https://passportjs.org"],["Docker","https://docker.com"],["Redis","https://redis.io"],["Bitbucket","https://bitbucket.org"]] 
-        },{
-            "id": 3,
             "bussinessName": "EPN Tech",
             "time": "May 2022 - Ene 2023",
             "charge": "Desarrollador Full-Stack",
@@ -53,16 +46,33 @@
             ],
             "tools": [["Angular","https://angular.io"],["Springboot","https://spring.io"],["GitLab","https://gitlab.com"],["Jira","https://www.atlassian.com/software/jira"]]
         },{
+            "id": 3,
+            "bussinessName": "CGB Satelital",
+            "time": "Feb 2023 - Sep 2023",
+            "charge": "Desarrollador UX",
+            "tasks": ["Diseño de la aplicación web Visual2 para CGB-Satelital",
+                        "Implementación de los módulos de incidencias e instalación de equipos de rastreo",
+                        "Desarrollo de APIs Rest para integraciones de servicios"],
+            "tools": [["EJS","https://ejs.co"],["Passport","https://passportjs.org"],["Docker","https://docker.com"],["Redis","https://redis.io"],["Bitbucket","https://bitbucket.org"]] 
+        },{
             "id": 4,
-            "bussinessName": "MitSoft",
-            "time": "Abr 2021 - Abr 2022",
+            "bussinessName": "Banco Guayaquil",
+            "time": "Sep 2023 - Ene 2024",
             "charge": "Diseñador UX",
-            "tasks": [
-                "Diseño de componentes visuales para páginas web",
-                "Planificación, desarrollo e interpretación de resultados de pruebas de usabilidad",
-                "Realización de encuestas de satisfacción de uso y análisis resultados para la toma de desiciones"
-            ],
-            "tools": [["Figma","https://figma.com"],["Trello","https://trello.com"]]
+            "tasks": ["Estuve en el área de transformación digital a cargo de la tarea de rediseño de landings de servicios para empresas del Banco Guayaquil.",
+                        "Participe activamente en diversos proyectos de innovación digital para mejorar la experiencia de usuario de los clientes"
+                    ],
+            "tools": [["Figma","https://figma.com",["Notion","https://www.notion.so"]]] 
+        },{
+            "id": 5,
+            "bussinessName": "Formos Ec",
+            "time": "Sep 2024 - Actualidad",
+            "charge": "Desarrollador Full-Stack",
+            "tasks": ["Soy desarrollador Full Stack en el proyecto de Perfect Company, donde participo activamente en el desarrollo de KitchenPro.",
+                        "Trabajo en actualizaciones y nuevas caratersísticas en la plataforma de gestion de organización de restaurantes de alto volúmen",
+                        "Desarrollo de caracteristicas e integraciones de nuevas en las aplicaciones móbiles"
+                    ],
+            "tools": [["Angular","https://angular.dev"],["TypeScript","https://www.typescriptlang.org"],["React Native","https://reactnative.dev"],["Kotlin","https://kotlinlang.org"]] 
         }
     ],
 

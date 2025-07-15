@@ -5,18 +5,15 @@ function WorkTabs ({works}){
 
   const {theme} = useContext(ThemeContext);
 
-  //use translation
 
-  //hook to handle tabs interactions
   const [tabState, setTabState] = useState(1);
 
   const toogleTab = (index) => {
         setTabState(index);
   }
-  //console.log(works);
 
+  const sortedWorks = works.slice().sort((a,b)=> b.id - a.id);
 
-  //function to render if exists tool in the object work
   function renderTools(tools){
     if (tools !== undefined){
       return(
@@ -37,9 +34,8 @@ function WorkTabs ({works}){
         <div className="columns">
           <div className="column is-2">
             <div className="tabs my-tabs">
-              {/* This tabs shoul be created dinamically*/}
               {
-                works.map((work) => (
+                sortedWorks.map((work) => (
                   <div key={work.id} className={tabState === work.id ? "tab-"+theme+" active" : "tab-"+theme} 
                   onClick={()=> toogleTab(work.id)}>{work.bussinessName}</div>  
                 ))
@@ -48,7 +44,7 @@ function WorkTabs ({works}){
           </div>
           <div className={"column auto text-color-"+theme}>
             {
-              works.map((work) => (
+              sortedWorks.map((work) => (
                 <div key={work.id} className={tabState === work.id ? "tab-content active-content" : "tab-content"}>
                   <h2 className="text-code pad-bott">
                     {work.charge + " - "} <span className={"text-color-primary-"+theme}>{work.bussinessName}</span>
