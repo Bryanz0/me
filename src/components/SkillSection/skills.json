@@ -4,7 +4,7 @@
             "skillName": "Figma",
             "percentage": "80%"
         },{
-            "skillName": "Invision",
+            "skillName": "React-Native",
             "percentage": "70%"
         },{
             "skillName": "HTML",
@@ -16,7 +16,7 @@
             "skillName": "JavaScript",
             "percentage": "80%"
         },{
-            "skillName": "PHP",
+            "skillName": "Azure-Devops",
             "percentage": "60%"
         }
     ],
@@ -26,9 +26,9 @@
             "percentage": "80%"
         },{
             "skillName": "TypeScript",
-            "percentage": "40%"
+            "percentage": "80%"
         },{
-            "skillName": "Perl",
+            "skillName": "Angular",
             "percentage": "50%"
         },{
             "skillName": "MsSQL",
