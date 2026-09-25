@@ -10,7 +10,7 @@ function ProjectsSection () {
 
     return (
         <div className="body-section" id="projects_section">
-        <div className="section" data-aos="zoom-in-left" data-aos-duration="750"
+        <div className="section section-container" data-aos="zoom-in-left" data-aos-duration="750"
           data-aos-anchor-placement="top-center">
           <div className="container">
             <div className="columns section-div">

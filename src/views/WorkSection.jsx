@@ -12,7 +12,7 @@ function WorkSection (){
 
     return (
         <div className="body-section" id="work_section">
-            <div className="section" data-aos="zoom-in-left" data-aos-anchor-placement="top-center">
+            <div className="section section-container" data-aos="zoom-in-left" data-aos-anchor-placement="top-center">
               <div className="container">
                 <div className="columns section-div">
                   <div className="column is-one-quarter is-4">
