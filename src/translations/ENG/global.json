@@ -17,7 +17,7 @@
   "presentation": {
     "sayHello": "Hi, I'm Bryan Zambrano",
     "professions": ["Software Developer", "UX Designer"],
-    "resume": "I have a diverse background in UX design and full-stack development, allowing me to understand user needs and preferences to create engaging user interfaces.With my expertise in both areas, I'm able to develop high-quality web applications that prioritize user experience and meet business requirements.",
+    "resume": "I build software across backend systems, cloud infrastructure, integrations, and user-facing applications. I enjoy turning complex business requirements into reliable products that are scalable, maintainable, and thoughtfully designed.",
     "cta-button": "Let's Talk!"
   },
 
