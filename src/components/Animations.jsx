@@ -14,28 +14,7 @@ function Animations() {
                 console.log("clicking option");
                 document.getElementById('dropdown_menu').classList.toggle('open');
             })
-        };
-
-        // copy text button interactions
-        let copy_btns = document.getElementsByName('copyText');
-        for (let i = 0; i < copy_btns.length; i++) {
-            copy_btns[i].addEventListener('click', () => {
-                let text = copy_btns[i].previousElementSibling.children[1].innerHTML;
-                const tempTextarea = document.createElement('textarea');
-                tempTextarea.value = text;
-                document.body.appendChild(tempTextarea);
-                tempTextarea.select();
-                document.execCommand('copy');
-                document.body.removeChild(tempTextarea);
-
-                copy_btns[i].children[0].innerHTML = '<i class="fa-solid fa-clipboard-check"></i> Copied!';
-
-                setTimeout(() => {
-                    copy_btns[i].children[0].innerHTML = '<i class="fa-regular fa-clipboard"></i> Copy';
-                }, 1500);
-            });
         }
-
 
         window.onscroll = () => {
             if (document.body.scrollTo > 20 || document.documentElement.scrollTop > 20) {

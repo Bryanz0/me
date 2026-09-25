@@ -189,35 +189,43 @@
     }
   ],
 
-  "contactTitle": "Contacto",
-
-  "contactSection": [
-    {
-      "id": 1,
-      "contact": "Email",
-      "contactImage": "/me/images/gmail_logo.png",
-      "contactInfo": "stevenzamdev@gmail.com",
-      "contactLink": "mailto:stevenzamdev@gmail.com?subject=Hi%2C%20i%20saw%20your%20information&body=Let's%20Talk...%0D%0A"
-    },
-    {
-      "id": 2,
-      "contact": "Linkedin",
-      "contactImage": "/me/images/linkedin_logo.png",
-      "contactInfo": "Bryan Zambrano",
-      "contactLink": "https://www.linkedin.com/in/bryan-steven-zambrano/"
-    },
-    {
-      "id": 3,
-      "contact": "Indeed",
-      "contactImage": "/me/images/indeed_logo.png",
-      "contactInfo": "Bryan Zambrano",
-      "contactLink": "https://profile.indeed.com/p/bryanstevenz-4wkxfhc"
-    }
-  ],
-
-  "contactMessage": "O descarga mi CV para más información...",
-
-  "downloadMessage": "Descarga!!!",
+  "contactSection": {
+    "eyebrow": "CONTACTO",
+    "titleStart": "Trabajemos",
+    "titleAccent": "juntos",
+    "supportingText": "Siempre estoy disponible para conversar sobre nuevos proyectos, oportunidades o simplemente compartir ideas sobre tecnología.",
+    "openContact": "Abrir {{contact}}",
+    "copyValue": "Copiar {{value}}",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "cvMessage": "O descarga mi CV para más información...",
+    "cards": [
+      {
+        "id": 1,
+        "contact": "Email",
+        "description": "Conversemos sobre tu proyecto u oportunidad.",
+        "contactImage": "/me/images/gmail_logo.png",
+        "contactInfo": "stevenzamdev@gmail.com",
+        "contactLink": "mailto:stevenzamdev@gmail.com?subject=Hi%2C%20i%20saw%20your%20information&body=Let's%20Talk...%0D%0A"
+      },
+      {
+        "id": 2,
+        "contact": "LinkedIn",
+        "description": "Conectemos y construyamos algo genial.",
+        "contactImage": "/me/images/linkedin_logo.png",
+        "contactInfo": "Bryan Zambrano",
+        "contactLink": "https://www.linkedin.com/in/bryan-steven-zambrano/"
+      },
+      {
+        "id": 3,
+        "contact": "Indeed",
+        "description": "Revisa mi perfil profesional.",
+        "contactImage": "/me/images/indeed_logo.png",
+        "contactInfo": "Bryan Zambrano",
+        "contactLink": "https://profile.indeed.com/p/bryanstevenz-4wkxfhc"
+      }
+    ]
+  },
 
   "footerSection": {
     "info1": "Finalmente, esta página fue diseñada y desarrollada por mi con ",

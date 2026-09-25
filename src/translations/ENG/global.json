@@ -191,35 +191,43 @@
     }
   ],
 
-  "contactTitle": "Contact",
-
-  "contactSection": [
-    {
-      "id": 1,
-      "contact": "Email",
-      "contactImage": "/me/images/gmail_logo.png",
-      "contactInfo": "stevenzamdev@gmail.com",
-      "contactLink": "mailto:stevenzamdev@gmail.com?subject=I%20saw%20your%20information&body=Let's%20Talk...%0D%0A"
-    },
-    {
-      "id": 2,
-      "contact": "Linkedin",
-      "contactImage": "/me/images/linkedin_logo.png",
-      "contactInfo": "Bryan Zambrano",
-      "contactLink": "https://www.linkedin.com/in/bryan-steven-zambrano"
-    },
-    {
-      "id": 3,
-      "contact": "Indeed",
-      "contactImage": "/me/images/indeed_logo.png",
-      "contactInfo": "Bryan Zambrano",
-      "contactLink": "https://profile.indeed.com/p/bryanstevenz-4wkxfhc"
-    }
-  ],
-
-  "contactMessage": "Or download my CV for more info...",
-
-  "downloadMessage": "Download!!!",
+  "contactSection": {
+    "eyebrow": "CONTACT",
+    "titleStart": "Let's Work",
+    "titleAccent": "Together",
+    "supportingText": "I'm always open to discussing new projects, opportunities, or just having a chat about technology and ideas.",
+    "openContact": "Open {{contact}}",
+    "copyValue": "Copy {{value}}",
+    "copy": "Copy",
+    "copied": "Copied",
+    "cvMessage": "Or download my CV for more info...",
+    "cards": [
+      {
+        "id": 1,
+        "contact": "Email",
+        "description": "Let's talk about your project or opportunity.",
+        "contactImage": "/me/images/gmail_logo.png",
+        "contactInfo": "stevenzamdev@gmail.com",
+        "contactLink": "mailto:stevenzamdev@gmail.com?subject=I%20saw%20your%20information&body=Let's%20Talk...%0D%0A"
+      },
+      {
+        "id": 2,
+        "contact": "LinkedIn",
+        "description": "Connect and let's build something great.",
+        "contactImage": "/me/images/linkedin_logo.png",
+        "contactInfo": "Bryan Zambrano",
+        "contactLink": "https://www.linkedin.com/in/bryan-steven-zambrano"
+      },
+      {
+        "id": 3,
+        "contact": "Indeed",
+        "description": "Check out my professional profile.",
+        "contactImage": "/me/images/indeed_logo.png",
+        "contactInfo": "Bryan Zambrano",
+        "contactLink": "https://profile.indeed.com/p/bryanstevenz-4wkxfhc"
+      }
+    ]
+  },
 
   "footerSection": {
     "info1": "And finally, this web page was designed and development by my self with ",
