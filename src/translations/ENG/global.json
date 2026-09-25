@@ -138,32 +138,56 @@
     }
   ],
 
-  "projectsTitle": "Projects",
+  "projectsSectionHeader": {
+    "eyebrow": "PROJECTS",
+    "title": "Selected Projects",
+    "supportingText": "A few projects that reflect my experience, problem solving skills, and the impact I've made."
+  },
 
   "projectsSection": [
     {
       "id": 1,
       "projectName": "Web Portfolio",
       "projectType": "Personal Project",
-      "projectDesc": "This project is about a landing page that tries to take a CV to another level. Mainly, this project was developed with React, the features of this project are internationalization (Language change), dark and light themes. In addition to various types of animations, such as typewriter, progress bar and fade-in animations."
+      "projectDesc": "This project is about a landing page that tries to take a CV to another level. Mainly, this project was developed with React, the features of this project are internationalization (Language change), dark and light themes. In addition to various types of animations, such as typewriter, progress bar and fade-in animations.",
+      "highlights": [
+        {"icon": "fa-regular fa-window-maximize", "text": "Interactive CV-style portfolio interface."},
+        {"icon": "fa-solid fa-language", "text": "Language switching and light/dark themes."},
+        {"icon": "fa-solid fa-wand-magic-sparkles", "text": "Typewriter, progress, and fade-in animations."}
+      ]
     },
     {
       "id": 2,
       "projectName": "Data integration and preprocessing service",
       "projectType": "Freelance",
-      "projectDesc": "I developed a data extraction and transmission solution for Sutran (Superintendence of Land Transportation of People, Cargo, and Goods) in Peru. This service efficiently extracts vehicle information from a database within an organization or fleet. Once the data is extracted, it undergoes a transformation process where codes are converted into messages or keywords relevant to the company. Additionally, data cleaning is performed to send only essential information to the endpoint, preventing information overload. The service was developed using JavaScript and Node.js, ensuring resilience and security."
+      "projectDesc": "I developed a data extraction and transmission solution for Sutran (Superintendence of Land Transportation of People, Cargo, and Goods) in Peru. This service efficiently extracts vehicle information from a database within an organization or fleet. Once the data is extracted, it undergoes a transformation process where codes are converted into messages or keywords relevant to the company. Additionally, data cleaning is performed to send only essential information to the endpoint, preventing information overload. The service was developed using JavaScript and Node.js, ensuring resilience and security.",
+      "highlights": [
+        {"icon": "fa-solid fa-database", "text": "Vehicle data extraction and transmission."},
+        {"icon": "fa-solid fa-arrows-rotate", "text": "Data transformation and cleaning workflows."},
+        {"icon": "fa-solid fa-shield-halved", "text": "Resilient and secure endpoint delivery."}
+      ]
     },
     {
       "id": 3,
       "projectName": "Hotel Management System",
       "projectType": "Freelance",
-      "projectDesc": "Developed and designed a comprehensive administrative management system for the Buenaventura Hotel in Ibarra. This system is distinguished by its ability to efficiently manage room status, keep accurate guest records, and its tight integration with a sophisticated billing and payment processing system."
+      "projectDesc": "Developed and designed a comprehensive administrative management system for the Buenaventura Hotel in Ibarra. This system is distinguished by its ability to efficiently manage room status, keep accurate guest records, and its tight integration with a sophisticated billing and payment processing system.",
+      "highlights": [
+        {"icon": "fa-solid fa-bed", "text": "Efficient room status management."},
+        {"icon": "fa-regular fa-address-book", "text": "Accurate guest records."},
+        {"icon": "fa-solid fa-receipt", "text": "Billing and payment processing integration."}
+      ]
     },
     {
       "id": 4,
       "projectName": "Remote Access Control",
       "projectType": "Freelance",
-      "projectDesc": "Work for Legio Seguridad, designing a new system for integrating security camera and access control services. At the same time, develop integration services through APIs to connect the system with HikVision devices. Among the new functionalities that I implemented were a virtual logbook and remote device control."
+      "projectDesc": "Work for Legio Seguridad, designing a new system for integrating security camera and access control services. At the same time, develop integration services through APIs to connect the system with HikVision devices. Among the new functionalities that I implemented were a virtual logbook and remote device control.",
+      "highlights": [
+        {"icon": "fa-solid fa-shield-halved", "text": "Security camera and access-control integration."},
+        {"icon": "fa-solid fa-share-nodes", "text": "API integrations with HikVision devices."},
+        {"icon": "fa-regular fa-clipboard", "text": "Virtual logbook and remote device control."}
+      ]
     }
   ],
 
