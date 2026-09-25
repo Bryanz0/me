@@ -20,7 +20,15 @@
     "resume": "Desarrollo software que abarca sistemas backend, infraestructura en la nube, integraciones y aplicaciones orientadas a las personas usuarias. Disfruto transformar requerimientos de negocio complejos en productos confiables, escalables, mantenibles y diseñados con intención.",
     "cta-button": "Contáctame!!!"
   },
-  "experiencieTitle": "Experiencia",
+  "experienceSection": {
+    "eyebrow": "EXPERIENCIA",
+    "title": "Dónde he trabajado",
+    "supportingText": "Un recorrido por las empresas y proyectos que han formado mi experiencia como ingeniero de software.",
+    "current": "ACTUAL",
+    "companyListLabel": "Empresas",
+    "technologiesLabel": "Tecnologías",
+    "companyWebsite": "Visitar el sitio web de {{company}}"
+  },
 
   "workSection": [
     {

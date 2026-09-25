@@ -21,7 +21,15 @@
     "cta-button": "Let's Talk!"
   },
 
-  "experiencieTitle": "We're I've Worked",
+  "experienceSection": {
+    "eyebrow": "EXPERIENCE",
+    "title": "Where I've Worked",
+    "supportingText": "A journey through the companies and projects that have shaped my experience as a software engineer.",
+    "current": "CURRENT",
+    "companyListLabel": "Companies",
+    "technologiesLabel": "Technologies",
+    "companyWebsite": "Visit {{company}} website"
+  },
 
   "workSection": [
     {
