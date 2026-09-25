@@ -255,6 +255,116 @@ header {
   font-weight: 600;
 }
 
+/* Skills section */
+.skills-section-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 28rem);
+  column-gap: clamp(2rem, 8vw, 8rem);
+  max-width: 74rem;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+.skills-eyebrow {
+  grid-column: 1;
+  margin: 0;
+  color: var(--skills-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.skills-heading {
+  grid-column: 1;
+  margin: 0.5rem 0 0;
+  color: var(--skills-heading);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.skills-supporting-text {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  max-width: 28rem;
+  margin: 0;
+  color: var(--skills-muted);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.skills-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.skills-category-card {
+  min-width: 0;
+  min-height: 17.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--skills-card-border);
+  border-radius: 1rem;
+  background-color: var(--skills-card-background);
+}
+
+.skills-category-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.skills-category-icon {
+  display: grid;
+  flex: 0 0 auto;
+  width: 4rem;
+  height: 4rem;
+  place-items: center;
+  border-radius: 0.85rem;
+  background-color: var(--skills-icon-background);
+  color: var(--skills-accent);
+  font-size: 1.75rem;
+}
+
+.skills-category-heading h3 {
+  margin: 0;
+  color: var(--skills-heading);
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.skills-category-heading p {
+  margin: 0.25rem 0 0;
+  color: var(--skills-muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.skills-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.4rem;
+}
+
+.skills-chip {
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--skills-chip-border);
+  border-radius: 999px;
+  background-color: var(--skills-chip-background);
+  color: var(--skills-chip-text);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.25;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.skills-chip:hover {
+  border-color: var(--skills-chip-hover-border);
+  background-color: var(--skills-chip-hover-background);
+  color: var(--skills-chip-hover-text);
+}
+
 /* Page-level decoration system */
 .background-decorations {
   position: absolute;
@@ -366,17 +476,6 @@ header {
 }
 
 
-.skill-text {
-  font-weight: bold;
-}
-
-.skill-bar {
-  margin-top: 0;
-  background-image: linear-gradient(to right, #FC0000, #1E1AE9);
-  height: 5px;
-  border-radius: 5px;
-}
-
 .copy-text {
   padding: 0.4rem;
   font-size: 0.75rem;
@@ -443,6 +542,18 @@ header {
   --experience-chip-background: rgba(245, 212, 66, 0.05);
   --experience-chip-border: rgba(245, 212, 66, 0.3);
   --experience-chip-text: #F5D442;
+  --skills-accent: #F5D442;
+  --skills-heading: #FFFFFF;
+  --skills-muted: rgba(213, 220, 233, 0.7);
+  --skills-card-background: rgba(12, 28, 62, 0.48);
+  --skills-card-border: rgba(255, 255, 255, 0.12);
+  --skills-icon-background: rgba(245, 212, 66, 0.1);
+  --skills-chip-background: rgba(255, 255, 255, 0.06);
+  --skills-chip-border: rgba(255, 255, 255, 0.12);
+  --skills-chip-text: rgba(244, 247, 252, 0.86);
+  --skills-chip-hover-background: rgba(245, 212, 66, 0.1);
+  --skills-chip-hover-border: rgba(245, 212, 66, 0.28);
+  --skills-chip-hover-text: #F5D442;
   background-color: #060E21;
   min-height: 100vh;
   width: 100%;
@@ -950,6 +1061,18 @@ img.logo-dark {
   --experience-chip-background: rgba(30, 26, 233, 0.07);
   --experience-chip-border: transparent;
   --experience-chip-text: #3731a7;
+  --skills-accent: #1E1AE9;
+  --skills-heading: #060E21;
+  --skills-muted: #657087;
+  --skills-card-background: rgba(255, 255, 255, 0.74);
+  --skills-card-border: rgba(6, 14, 33, 0.1);
+  --skills-icon-background: rgba(30, 26, 233, 0.08);
+  --skills-chip-background: #f1f3f7;
+  --skills-chip-border: rgba(6, 14, 33, 0.07);
+  --skills-chip-text: #3e4a5f;
+  --skills-chip-hover-background: rgba(30, 26, 233, 0.08);
+  --skills-chip-hover-border: rgba(30, 26, 233, 0.18);
+  --skills-chip-hover-text: #1E1AE9;
   background-color: #FEFEFE;
   min-height: 100vh;
   width: 100%;
@@ -1343,6 +1466,12 @@ img.logo-light {
 
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .skills-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 828px) {
 
   .navb-light .links,
@@ -1377,6 +1506,14 @@ img.logo-light {
 }
 
 @media (max-width: 768px) {
+  .skills-section-header {
+    display: block;
+  }
+
+  .skills-supporting-text {
+    margin-top: 1rem;
+  }
+
   .experience-section-header {
     display: block;
   }
@@ -1430,5 +1567,15 @@ img.logo-light {
 
   .tittle-section {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-category-card {
+    min-height: 0;
   }
 }

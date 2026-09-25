@@ -31,6 +31,12 @@
     "companyWebsite": "Visit {{company}} website"
   },
 
+  "skillsSection": {
+    "eyebrow": "SKILLS",
+    "title": "Technologies & Expertise",
+    "supportingText": "A combination of technical skills, product thinking, and problem solving to build reliable and scalable solutions."
+  },
+
   "workSection": [
     {
       "id": 1,

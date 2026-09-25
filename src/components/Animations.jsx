@@ -16,16 +16,6 @@ function Animations() {
             })
         };
 
-        window.onload = function (){
-
-        //GSAP
-        gsap.from(".skill-bar", {
-            scrollTrigger: "#skill_column1",
-            width: 0,
-            duration: 5
-        });
-        }
-
         // copy text button interactions
         let copy_btns = document.getElementsByName('copyText');
         for (let i = 0; i < copy_btns.length; i++) {

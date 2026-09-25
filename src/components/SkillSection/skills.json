@@ -1,44 +1,30 @@
-{
-    "skills-col-1": [
-        {
-            "skillName": "Figma",
-            "percentage": "80%"
-        },{
-            "skillName": "React-Native",
-            "percentage": "70%"
-        },{
-            "skillName": "HTML",
-            "percentage": "80%"
-        },{
-            "skillName": "CSS",
-            "percentage": "70%"
-        },{
-            "skillName": "JavaScript",
-            "percentage": "80%"
-        },{
-            "skillName": "Azure-Devops",
-            "percentage": "60%"
-        }
-    ],
-    "skills-col-2":[
-        {
-            "skillName": "Java",
-            "percentage": "80%"
-        },{
-            "skillName": "TypeScript",
-            "percentage": "80%"
-        },{
-            "skillName": "Angular",
-            "percentage": "50%"
-        },{
-            "skillName": "MsSQL",
-            "percentage": "70%"
-        },{
-            "skillName": "MongoDB",
-            "percentage": "60%"
-        },{
-            "skillName": "Git",
-            "percentage": "80%"
-        }
-    ]
-}
+[
+  {
+    "id": "backend",
+    "title": "Backend",
+    "description": "APIs, services and integrations",
+    "icon": "fa-solid fa-server",
+    "technologies": ["Node.js", "TypeScript", "Java", "Express", "NestJS", "REST APIs", "PostgreSQL", "MongoDB", "SQL Server"]
+  },
+  {
+    "id": "frontend-mobile",
+    "title": "Frontend & Mobile",
+    "description": "Web and mobile applications",
+    "icon": "fa-solid fa-mobile-screen-button",
+    "technologies": ["React", "React Native", "Angular", "HTML", "CSS", "JavaScript", "Kotlin", "Figma", "UI/UX", "Responsive Design"]
+  },
+  {
+    "id": "cloud-devops",
+    "title": "Cloud & DevOps",
+    "description": "Infrastructure and deployment",
+    "icon": "fa-solid fa-cloud",
+    "technologies": ["AWS", "Azure DevOps", "Docker", "CI/CD", "Linux", "EC2", "ECS", "S3", "RDS", "Git", "GitHub"]
+  },
+  {
+    "id": "tools-others",
+    "title": "Tools & Others",
+    "description": "Productivity and collaboration",
+    "icon": "fa-solid fa-screwdriver-wrench",
+    "technologies": ["Postman", "Swagger", "Jira", "Notion", "Confluence", "GitLab", "VS Code", "Figma", "Agile"]
+  }
+]

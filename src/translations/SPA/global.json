@@ -30,6 +30,12 @@
     "companyWebsite": "Visitar el sitio web de {{company}}"
   },
 
+  "skillsSection": {
+    "eyebrow": "DESTREZAS",
+    "title": "Tecnologías y experiencia",
+    "supportingText": "Una combinación de habilidades técnicas, visión de producto y resolución de problemas para crear soluciones confiables y escalables."
+  },
+
   "workSection": [
     {
       "id": 1,
