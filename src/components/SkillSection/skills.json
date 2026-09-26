@@ -2,29 +2,25 @@
   {
     "id": "backend",
     "title": "Backend",
-    "description": "APIs, services and integrations",
     "icon": "fa-solid fa-server",
-    "technologies": ["Node.js", "TypeScript", "Java", "Express", "NestJS", "REST APIs", "PostgreSQL", "MongoDB", "SQL Server"]
+    "technologies": ["Node.js", "TypeScript", "Java", "Express", "REST APIs", "PostgreSQL", "MongoDB", "SQL Server"]
   },
   {
     "id": "frontend-mobile",
     "title": "Frontend & Mobile",
-    "description": "Web and mobile applications",
     "icon": "fa-solid fa-mobile-screen-button",
-    "technologies": ["React", "React Native", "Angular", "HTML", "CSS", "JavaScript", "Kotlin", "Figma", "UI/UX", "Responsive Design"]
+    "technologies": ["React", "React Native", "Angular", "HTML", "CSS", "JavaScript", "Kotlin", "UI/UX"]
   },
   {
     "id": "cloud-devops",
     "title": "Cloud & DevOps",
-    "description": "Infrastructure and deployment",
     "icon": "fa-solid fa-cloud",
-    "technologies": ["AWS", "Azure DevOps", "Docker", "CI/CD", "Linux", "EC2", "ECS", "S3", "RDS", "Git", "GitHub"]
+    "technologies": ["AWS", "Azure DevOps", "Docker", "CI/CD", "Lambdas", "DynamoDB", "ECS", "S3", "RDS", "Git"]
   },
   {
     "id": "tools-others",
-    "title": "Tools & Others",
-    "description": "Productivity and collaboration",
+    "title": "Tools",
     "icon": "fa-solid fa-screwdriver-wrench",
-    "technologies": ["Postman", "Swagger", "Jira", "Notion", "Confluence", "GitLab", "VS Code", "Figma", "Agile"]
+    "technologies": ["Postman", "Swagger", "Jira", "Notion", "Slack", "Figma", "ClickUp"]
   }
 ]

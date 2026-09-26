@@ -3,6 +3,7 @@ import ContactCards from "../components/ContactSection/ContactCards";
 
 function ContactSection() {
   const { t } = useTranslation("global");
+  const cvUrl = `${import.meta.env.BASE_URL}${t("header.download-file")}`;
 
   return (
     <div className="body-section" id="contact_section">
@@ -27,7 +28,7 @@ function ContactSection() {
 
           <div className="contact-cv-cta">
             <p>{t("contactSection.cvMessage")}</p>
-            <a className="contact-cv-button" href={t("header.download-file")} target="_blank" rel="noreferrer" download>
+            <a className="contact-cv-button" href={cvUrl} download>
               <i className="fa-regular fa-circle-down" aria-hidden="true"></i>
               {t("header.download-button")}
             </a>

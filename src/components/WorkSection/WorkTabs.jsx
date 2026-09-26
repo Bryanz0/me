@@ -40,10 +40,10 @@ function WorkTabs({ works }) {
               aria-pressed={isSelected}
             >
               <span className="experience-company-logo" aria-hidden="true">
-                {work.logo ? <img src={work.logo} alt="" /> : getInitials(work.bussinessName)}
+                {work.logo ? <img src={work.logo} alt="" /> : getInitials(work.businessName)}
               </span>
               <span className="experience-company-copy">
-                <span className="experience-company-name">{work.bussinessName}</span>
+                <span className="experience-company-name">{work.businessName}</span>
                 <span className="experience-company-time">{work.time}</span>
               </span>
               {isSelected && <i className="fa-solid fa-chevron-right experience-company-chevron" aria-hidden="true"></i>}
@@ -57,10 +57,10 @@ function WorkTabs({ works }) {
         <h3 className="experience-role">{selectedWork.charge}</h3>
         <p className="experience-company-heading">
           {selectedWork.companyUrl ? (
-            <a href={selectedWork.companyUrl} target="_blank" rel="noopener noreferrer" title={t("experienceSection.companyWebsite", { company: selectedWork.bussinessName })}>
-              {selectedWork.bussinessName} <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            <a href={selectedWork.companyUrl} target="_blank" rel="noopener noreferrer" title={t("experienceSection.companyWebsite", { company: selectedWork.businessName })}>
+              {selectedWork.businessName} <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
             </a>
-          ) : selectedWork.bussinessName}
+          ) : selectedWork.businessName}
         </p>
         <div className="experience-meta">
           <span><i className="fa-regular fa-calendar" aria-hidden="true"></i>{selectedWork.time}</span>

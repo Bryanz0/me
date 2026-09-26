@@ -18,7 +18,8 @@
     "sayHello": "Hi, I'm Bryan Zambrano",
     "professions": ["Software Developer", "UX Designer"],
     "resume": "I build software across backend systems, cloud infrastructure, integrations, and user-facing applications. I enjoy turning complex business requirements into reliable products that are scalable, maintainable, and thoughtfully designed.",
-    "cta-button": "Let's Talk!"
+    "cta-button": "Let's Talk!",
+    "portfolio": "Design Work"
   },
 
   "experienceSection": {
@@ -39,25 +40,11 @@
 
   "workSection": [
     {
-      "id": 1,
-      "bussinessName": "MitSoft",
-      "time": "Apr 2021 - Apr 2022",
-      "charge": "UX Designer",
-      "tasks": [
-        "Design of visual components for web pages",
-        "Planning, development and interpretation of usability test results",
-        "Conducting user satisfaction surveys and analyzing results for decision making"
-      ],
-      "tools": [
-        ["Figma", "https://figma.com"],
-        ["Trello", "https://trello.com"]
-      ]
-    },
-    {
       "id": 2,
-      "bussinessName": "EPN Tech",
+      "businessName": "EPN Tech",
       "time": "May 2022 - Ene 2023",
       "charge": "Full-Stack Developer",
+      "logo": "/me/images/companies/epn_tech.webp",
       "tasks": [
         "Development of secure APIs for the consumption of microservices",
         "Creation of visual components and layout of the site",
@@ -72,9 +59,10 @@
     },
     {
       "id": 3,
-      "bussinessName": "CGB Satelital",
+      "businessName": "CGB Satelital",
       "time": "Feb 2023 - Sep 2023",
       "charge": "UX Developer",
+      "logo": "/me/images/companies/cgb.webp",
       "tasks": [
         "Visual2 web application design for CGB-Satelital",
         "Implementation of incident modules and installation of tracking equipment",
@@ -90,9 +78,10 @@
     },
     {
       "id": 4,
-      "bussinessName": "Banco Guayaquil",
+      "businessName": "Banco Guayaquil",
       "time": "Sep 2023 - Jan 2024",
       "charge": "UX Designer",
+      "logo": "/me/images/companies/banco_guayaquil.webp",
       "tasks": [
         "I was in the digital transformation area in charge of the landings redesing task for Banco Guayaquil's bussiness services",
         "Actively participate in various digital innovation projects to improve customer user experience"
@@ -104,9 +93,10 @@
     },
     {
       "id": 5,
-      "bussinessName": "Formos Ec",
+      "businessName": "Formos Ec",
       "time": "Sep 2024 - Apr 2026",
       "charge": "Full Stack Developer",
+      "logo": "/me/images/companies/formos.webp",
       "tasks": [
         "I am a Full Stack Developer on the Perfect Company project, actively contributing to the development of KitchenPro.",
         "I work on updates and new features for the high-volume restaurant management platform.",
@@ -121,9 +111,10 @@
     },
     {
       "id": 6,
-      "bussinessName": "Rosaprima",
+      "businessName": "Rosaprima",
       "time": "May 2026 - Currently",
       "charge": "Software Developer",
+      "logo": "/me/images/companies/rosaprima.webp",
       "tasks": [
         "I am a Software Developer on the Avanza project, contributing to the development of a cloud-based financial services platform.",
         "I participate in the design, development, and maintenance of backend services and system integrations.",
@@ -151,10 +142,20 @@
       "projectType": "Personal Project",
       "projectDesc": "This project is about a landing page that tries to take a CV to another level. Mainly, this project was developed with React, the features of this project are internationalization (Language change), dark and light themes. In addition to various types of animations, such as typewriter, progress bar and fade-in animations.",
       "highlights": [
-        {"icon": "fa-regular fa-window-maximize", "text": "Interactive CV-style portfolio interface."},
-        {"icon": "fa-solid fa-language", "text": "Language switching and light/dark themes."},
-        {"icon": "fa-solid fa-wand-magic-sparkles", "text": "Typewriter, progress, and fade-in animations."}
-      ]
+        {
+          "icon": "fa-regular fa-window-maximize",
+          "text": "Interactive CV-style portfolio interface."
+        },
+        {
+          "icon": "fa-solid fa-language",
+          "text": "Language switching and light/dark themes."
+        },
+        {
+          "icon": "fa-solid fa-wand-magic-sparkles",
+          "text": "Typewriter, progress, and fade-in animations."
+        }
+      ],
+      "image": "/me/images/projects/portfolio.webp"
     },
     {
       "id": 2,
@@ -162,10 +163,20 @@
       "projectType": "Freelance",
       "projectDesc": "I developed a data extraction and transmission solution for Sutran (Superintendence of Land Transportation of People, Cargo, and Goods) in Peru. This service efficiently extracts vehicle information from a database within an organization or fleet. Once the data is extracted, it undergoes a transformation process where codes are converted into messages or keywords relevant to the company. Additionally, data cleaning is performed to send only essential information to the endpoint, preventing information overload. The service was developed using JavaScript and Node.js, ensuring resilience and security.",
       "highlights": [
-        {"icon": "fa-solid fa-database", "text": "Vehicle data extraction and transmission."},
-        {"icon": "fa-solid fa-arrows-rotate", "text": "Data transformation and cleaning workflows."},
-        {"icon": "fa-solid fa-shield-halved", "text": "Resilient and secure endpoint delivery."}
-      ]
+        {
+          "icon": "fa-solid fa-database",
+          "text": "Vehicle data extraction and transmission."
+        },
+        {
+          "icon": "fa-solid fa-arrows-rotate",
+          "text": "Data transformation and cleaning workflows."
+        },
+        {
+          "icon": "fa-solid fa-shield-halved",
+          "text": "Resilient and secure endpoint delivery."
+        }
+      ],
+      "image": "/me/images/projects/data_integration.webp"
     },
     {
       "id": 3,
@@ -173,10 +184,20 @@
       "projectType": "Freelance",
       "projectDesc": "Developed and designed a comprehensive administrative management system for the Buenaventura Hotel in Ibarra. This system is distinguished by its ability to efficiently manage room status, keep accurate guest records, and its tight integration with a sophisticated billing and payment processing system.",
       "highlights": [
-        {"icon": "fa-solid fa-bed", "text": "Efficient room status management."},
-        {"icon": "fa-regular fa-address-book", "text": "Accurate guest records."},
-        {"icon": "fa-solid fa-receipt", "text": "Billing and payment processing integration."}
-      ]
+        {
+          "icon": "fa-solid fa-bed",
+          "text": "Efficient room status management."
+        },
+        {
+          "icon": "fa-regular fa-address-book",
+          "text": "Accurate guest records."
+        },
+        {
+          "icon": "fa-solid fa-receipt",
+          "text": "Billing and payment processing integration."
+        }
+      ],
+      "image": "/me/images/projects/hotel_system.webp"
     },
     {
       "id": 4,
@@ -184,10 +205,20 @@
       "projectType": "Freelance",
       "projectDesc": "Work for Legio Seguridad, designing a new system for integrating security camera and access control services. At the same time, develop integration services through APIs to connect the system with HikVision devices. Among the new functionalities that I implemented were a virtual logbook and remote device control.",
       "highlights": [
-        {"icon": "fa-solid fa-shield-halved", "text": "Security camera and access-control integration."},
-        {"icon": "fa-solid fa-share-nodes", "text": "API integrations with HikVision devices."},
-        {"icon": "fa-regular fa-clipboard", "text": "Virtual logbook and remote device control."}
-      ]
+        {
+          "icon": "fa-solid fa-shield-halved",
+          "text": "Security camera and access-control integration."
+        },
+        {
+          "icon": "fa-solid fa-share-nodes",
+          "text": "API integrations with HikVision devices."
+        },
+        {
+          "icon": "fa-regular fa-clipboard",
+          "text": "Virtual logbook and remote device control."
+        }
+      ],
+      "image": "/me/images/projects/security_integration.webp"
     }
   ],
 

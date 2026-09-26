@@ -50,8 +50,8 @@ function App() {
               <ToUpButton />
               <Presentation />
               <WorkSection />
-              <SkillSection />
               <ProjectsSection />
+              <SkillSection />
               <ContactSection />
               <Footer />
               <Animations />

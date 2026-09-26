@@ -21,7 +21,6 @@ function SkillSection() {
                   <span className="skills-category-icon" aria-hidden="true"><i className={category.icon}></i></span>
                   <div>
                     <h3>{category.title}</h3>
-                    <p>{category.description}</p>
                   </div>
                 </div>
                 <div className="skills-chip-list" aria-label={category.title}>

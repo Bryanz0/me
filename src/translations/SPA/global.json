@@ -18,7 +18,8 @@
     "sayHello": "Hola, Soy Bryan Zambrano",
     "professions": ["Desarrollador", "Diseñador UX"],
     "resume": "Desarrollo software que abarca sistemas backend, infraestructura en la nube, integraciones y aplicaciones orientadas a las personas usuarias. Disfruto transformar requerimientos de negocio complejos en productos confiables, escalables, mantenibles y diseñados con intención.",
-    "cta-button": "Contáctame!!!"
+    "cta-button": "Contáctame!!!",
+    "portfolio": "Diseños"
   },
   "experienceSection": {
     "eyebrow": "EXPERIENCIA",
@@ -38,25 +39,11 @@
 
   "workSection": [
     {
-      "id": 1,
-      "bussinessName": "MitSoft",
-      "time": "Abr 2021 - Abr 2022",
-      "charge": "Diseñador UX",
-      "tasks": [
-        "Diseño de componentes visuales para páginas web",
-        "Planificación, desarrollo e interpretación de resultados de pruebas de usabilidad",
-        "Realización de encuestas de satisfacción de uso y análisis resultados para la toma de desiciones"
-      ],
-      "tools": [
-        ["Figma", "https://figma.com"],
-        ["Trello", "https://trello.com"]
-      ]
-    },
-    {
       "id": 2,
-      "bussinessName": "EPN Tech",
+      "businessName": "EPN Tech",
       "time": "May 2022 - Ene 2023",
       "charge": "Desarrollador Full-Stack",
+      "logo": "/me/images/companies/epn_tech.webp",
       "tasks": [
         "Desarrollo de APIs seguras para al consumo de microservicios",
         "Creación de componentes visuales y maquetación del sitio",
@@ -71,9 +58,10 @@
     },
     {
       "id": 3,
-      "bussinessName": "CGB Satelital",
+      "businessName": "CGB Satelital",
       "time": "Feb 2023 - Sep 2023",
       "charge": "Desarrollador UX",
+      "logo": "/me/images/companies/cgb.webp",
       "tasks": [
         "Diseño de la aplicación web Visual2 para CGB-Satelital",
         "Implementación de los módulos de incidencias e instalación de equipos de rastreo",
@@ -89,9 +77,10 @@
     },
     {
       "id": 4,
-      "bussinessName": "Banco Guayaquil",
+      "businessName": "Banco Guayaquil",
       "time": "Sep 2023 - Ene 2024",
       "charge": "Diseñador UX",
+      "logo": "/me/images/companies/banco_guayaquil.webp",
       "tasks": [
         "Estuve en el área de transformación digital a cargo de la tarea de rediseño de landings de servicios para empresas del Banco Guayaquil.",
         "Participe activamente en diversos proyectos de innovación digital para mejorar la experiencia de usuario de los clientes"
@@ -102,9 +91,10 @@
     },
     {
       "id": 5,
-      "bussinessName": "Formos Ec",
+      "businessName": "Formos Ec",
       "time": "Sep 2024 - Actualidad",
       "charge": "Desarrollador Full-Stack",
+      "logo": "/me/images/companies/formos.webp",
       "tasks": [
         "Soy desarrollador Full Stack en el proyecto de Perfect Company, donde participo activamente en el desarrollo de KitchenPro.",
         "Trabajo en actualizaciones y nuevas caratersísticas en la plataforma de gestion de organización de restaurantes de alto volúmen",
@@ -119,9 +109,10 @@
     },
     {
       "id": 6,
-      "bussinessName": "Rosaprima",
+      "businessName": "Rosaprima",
       "time": "May 2026 - Actualidad",
       "charge": "Desarrollador de Software",
+      "logo": "/me/images/companies/rosaprima.webp",
       "tasks": [
         "Soy Desarrollador de Software en el proyecto Avanza, contribuyendo al desarrollo de una plataforma de servicios financieros basada en la nube.",
         "Participo en el diseño, desarrollo y mantenimiento de servicios backend e integraciones entre sistemas.",
@@ -149,10 +140,20 @@
       "projectType": "Proyecto Personal",
       "projectDesc": "Este proyecto se trata de una landing que trata de llevar un CV a otro nivel. Principalmente, este proyecto fue desarrollado con React, las características de este proyecto son la internacionalización (Cambio de lenguaje), temas oscuro y claro. Además de varios tipos de animaciones, como typewriter, progress bar and fade-in animations.",
       "highlights": [
-        {"icon": "fa-regular fa-window-maximize", "text": "Interfaz de portafolio interactiva con formato de CV."},
-        {"icon": "fa-solid fa-language", "text": "Cambio de idioma y temas claro/oscuro."},
-        {"icon": "fa-solid fa-wand-magic-sparkles", "text": "Animaciones de escritura, progreso y aparición."}
-      ]
+        {
+          "icon": "fa-regular fa-window-maximize",
+          "text": "Interfaz de portafolio interactiva con formato de CV."
+        },
+        {
+          "icon": "fa-solid fa-language",
+          "text": "Cambio de idioma y temas claro/oscuro."
+        },
+        {
+          "icon": "fa-solid fa-wand-magic-sparkles",
+          "text": "Animaciones de escritura, progreso y aparición."
+        }
+      ],
+      "image": "/me/images/projects/portfolio.webp"
     },
     {
       "id": 2,
@@ -160,10 +161,20 @@
       "projectType": "Freelance",
       "projectDesc": "Desarrollé una solución de extracción y transmisión de datos para Sutran (Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías) en Perú. Este servicio extrae eficientemente información del vehículo de una base de datos dentro de una organización o flota. Una vez extraídos los datos, se someten a un proceso de transformación donde los códigos se convierten en mensajes o palabras clave relevantes para la empresa. Además, se realiza una limpieza de datos para enviar solo información esencial al punto final, evitando la sobrecarga de información. El servicio fue desarrollado utilizando JavaScript y Node.js, lo que garantiza resiliencia y seguridad.",
       "highlights": [
-        {"icon": "fa-solid fa-database", "text": "Extracción y transmisión de datos de vehículos."},
-        {"icon": "fa-solid fa-arrows-rotate", "text": "Flujos de transformación y limpieza de datos."},
-        {"icon": "fa-solid fa-shield-halved", "text": "Entrega resiliente y segura al endpoint."}
-      ]
+        {
+          "icon": "fa-solid fa-database",
+          "text": "Extracción y transmisión de datos de vehículos."
+        },
+        {
+          "icon": "fa-solid fa-arrows-rotate",
+          "text": "Flujos de transformación y limpieza de datos."
+        },
+        {
+          "icon": "fa-solid fa-shield-halved",
+          "text": "Entrega resiliente y segura al endpoint."
+        }
+      ],
+      "image": "/me/images/projects/data_integration.webp"
     },
     {
       "id": 3,
@@ -171,10 +182,20 @@
       "projectType": "Freelance",
       "projectDesc": "Desarrolle y diseñé un sistema integral de gestión administrativa para el  Hotel Buenaventura en Ibarra. Este sistema se distingue por su capacidad para gestionar eficientemente el estado de las habitaciones, llevar un registro preciso de los huéspedes y su estrecha integración con un sofisticado sistema de facturación y procesamiento de pagos",
       "highlights": [
-        {"icon": "fa-solid fa-bed", "text": "Gestión eficiente del estado de habitaciones."},
-        {"icon": "fa-regular fa-address-book", "text": "Registros precisos de huéspedes."},
-        {"icon": "fa-solid fa-receipt", "text": "Integración de facturación y pagos."}
-      ]
+        {
+          "icon": "fa-solid fa-bed",
+          "text": "Gestión eficiente del estado de habitaciones."
+        },
+        {
+          "icon": "fa-regular fa-address-book",
+          "text": "Registros precisos de huéspedes."
+        },
+        {
+          "icon": "fa-solid fa-receipt",
+          "text": "Integración de facturación y pagos."
+        }
+      ],
+      "image": "/me/images/projects/hotel_system.webp"
     },
     {
       "id": 4,
@@ -182,10 +203,20 @@
       "projectType": "Freelance",
       "projectDesc": "Trabajé para Legio Seguridad, diseñando un nuevo sistema de integración de servicios de cámaras de seguridad y control de accesos. A su vez desarrolle servicios de integración a través de APIs para la conexión del sistema con dispositivos HikVision. Dentro de las nuevas funcionalidades que implementé fueron una bitácora virtual y el control de dispositivos de manera remota.",
       "highlights": [
-        {"icon": "fa-solid fa-shield-halved", "text": "Integración de cámaras de seguridad y control de accesos."},
-        {"icon": "fa-solid fa-share-nodes", "text": "Integraciones mediante APIs con dispositivos HikVision."},
-        {"icon": "fa-regular fa-clipboard", "text": "Bitácora virtual y control remoto de dispositivos."}
-      ]
+        {
+          "icon": "fa-solid fa-shield-halved",
+          "text": "Integración de cámaras de seguridad y control de accesos."
+        },
+        {
+          "icon": "fa-solid fa-share-nodes",
+          "text": "Integraciones mediante APIs con dispositivos HikVision."
+        },
+        {
+          "icon": "fa-regular fa-clipboard",
+          "text": "Bitácora virtual y control remoto de dispositivos."
+        }
+      ],
+      "image": "/me/images/projects/security_integration.webp"
     }
   ],
 
