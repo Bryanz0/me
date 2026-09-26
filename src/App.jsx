@@ -13,6 +13,7 @@ import ProjectsSection from './views/ProjectsSection';
 import ContactSection from './views/ContactSection';
 import Footer from './views/partials/Footer';
 import ToUpButton from './views/partials/ToUpButton';
+import BackgroundDecorations from './components/BackgroundDecorations';
 
 
 function App() {
@@ -42,17 +43,20 @@ function App() {
           <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" type="text/javascript" />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" type="text/javascript" />
           </Helmet>
-          <Header />
-          <main>
-            <ToUpButton />
-            <Presentation />
-            <WorkSection />
-            <SkillSection />
-            <ProjectsSection />
-            <ContactSection />
-            <Footer />
-            <Animations />
-          </main>
+          <BackgroundDecorations />
+          <div className="page-content">
+            <Header />
+            <main>
+              <ToUpButton />
+              <Presentation />
+              <WorkSection />
+              <ProjectsSection />
+              <SkillSection />
+              <ContactSection />
+              <Footer />
+              <Animations />
+            </main>
+          </div>
         </div>
       </HelmetProvider>
     </ThemeContext.Provider>

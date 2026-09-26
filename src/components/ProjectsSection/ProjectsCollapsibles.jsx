@@ -1,44 +1,67 @@
-import { useContext, useState } from "react";
-import { ThemeContext } from "../../contexts/Theme.context";
+import { useState } from "react";
+
+function renderProjectImage(project, expanded = false) {
+  const imageClass = expanded ? "project-expanded-media" : "project-thumbnail";
+
+  return (
+    <div className={imageClass}>
+      {project.image ? <img src={project.image} alt={project.projectName} /> : <i className="fa-regular fa-image" aria-hidden="true"></i>}
+    </div>
+  );
+}
 
 function ProjectsCollapsibles({ projects }) {
+  const sortedProjects = projects.slice().sort((a, b) => b.id - a.id);
+  const [expandedId, setExpandedId] = useState(sortedProjects[0]?.id);
 
-    const { theme } = useContext(ThemeContext);
+  return (
+    <div className="projects-accordion">
+      {sortedProjects.map((project) => {
+        const isExpanded = expandedId === project.id;
+        const panelId = `project-panel-${project.id}`;
 
-    //handle collapsibles interactions
+        return (
+          <article className={isExpanded ? "project-accordion-item is-expanded" : "project-accordion-item"} key={project.id}>
+            <button
+              type="button"
+              className="project-accordion-trigger"
+              onClick={() => setExpandedId(project.id)}
+              aria-expanded={isExpanded}
+              aria-controls={panelId}
+            >
+              {renderProjectImage(project)}
+              <span className="project-trigger-copy">
+                <span className="project-trigger-title">{project.projectName}</span>
+                <span className="project-trigger-type">{project.projectType}</span>
+              </span>
+              <i className={isExpanded ? "fa-solid fa-chevron-up project-trigger-chevron" : "fa-solid fa-chevron-down project-trigger-chevron"} aria-hidden="true"></i>
+            </button>
 
-    // Initialize a state array to manage the state of each collapsible
-    const [collapsibleStates, setCollapsibleStates] = useState(projects.map(() => false));
-
-    // Function to toggle the state of a specific collapsible by index
-    const toggle = (index) => {
-        const newStates = [...collapsibleStates];
-        newStates[index] = !newStates[index];
-        setCollapsibleStates(newStates);
-    };
-
-    return (
-        <>
-            {projects.slice().reverse().map((project, index) => (
-                <div key={project.id} className={"is-fullwidth collapse-" + theme}>
-                    <div className={"collapsible collapse-header-" + theme} onClick={() => toggle(index)}>
-                        <p style={{ fontWeight: "bold" }}>
-                            {project.projectName} - <span>{project.projectType}</span>
-                        </p>
-                        <p className="is-flex" style={{ alignItems: "center", right: "1.5rem", marginRight: "1rem", position: "absolute"}}>
-                            <i className={ collapsibleStates[index] ? "fa-solid fa-angle-up" : "fa fa-angle-down"}></i>
-                        </p>
-                    </div>
-                    {collapsibleStates[index] && (
-                        <div className={"collapsible-content-" + theme + " is-flex"}>
-                            <p>{project.projectDesc}</p>
-                        </div>
-                    )}
+            <div className="project-expanded-content" id={panelId} aria-hidden={!isExpanded}>
+              <div className="project-expanded-inner">
+                {renderProjectImage(project, true)}
+                <div className="project-main-info">
+                  <p className="project-type-eyebrow">{project.projectType}</p>
+                  <h3>{project.projectName}</h3>
+                  <p className="project-description">{project.projectDesc}</p>
                 </div>
-            ))}
-        </>
-    );
-
+                {project.highlights?.length > 0 && (
+                  <div className="project-highlights">
+                    {project.highlights.map((highlight) => (
+                      <div className="project-highlight" key={highlight.text}>
+                        <span className="project-highlight-icon" aria-hidden="true"><i className={highlight.icon}></i></span>
+                        <p>{highlight.text}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  );
 }
 
 export default ProjectsCollapsibles;

@@ -1,35 +1,81 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../contexts/Theme.context";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
-function ContactCards ({cards}) {
+function ContactCards({ cards }) {
+  const { t } = useTranslation("global");
+  const [copiedId, setCopiedId] = useState(null);
 
-  const {theme} = useContext(ThemeContext);
+  const handleCopy = async (card) => {
+    try {
+      await navigator.clipboard.writeText(card.contactInfo);
 
-    return (
-        <>
-            {
-                cards.map((card)=>(
-                    <div key={card.id} className="column is-3">{/*Dinamic content start here*/}
-                        <div className={"card contact-card-"+theme}>
-                          <div className="card-image has-text-centered" style={{margin: "auto", paddingTop: "2rem", cursor: "pointer"}}>
-                            <a href={card.contactLink}><img src={card.contactImage} alt={card.contact}
-                              style={{width: "100px", height: "100px"}}/></a>
-                          </div>
-                          <div className="card-content has-text-centered">
-                            <div className="content">
-                              <h3 className={"is-size-3 mb-5 text-color-primary-"+theme}><span className={"text-color-primary-"+theme}>{card.contact}</span></h3>
-                              <p className="is-size-6 has-text-weight-normal">{card.contactInfo}</p>
-                            </div>
-                            <div className={"copy-btn-"+theme} name="copyText">
-                              <p className="copy-text" ><i className="fa-regular fa-clipboard"></i> Copy</p>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                ))   
-            }
-        </>
-    );
+      setCopiedId(card.id);
+      window.setTimeout(() => setCopiedId(null), 1500);
+    } catch (error) {
+      console.error("Failed to copy contact information:", error);
+    }
+  };
+
+  return (
+    <div className="contact-card-grid">
+      {cards.map((card) => {
+        const isExternal = card.contactLink.startsWith("http");
+        const isCopied = copiedId === card.id;
+
+        return (
+          <article className="contact-method-card" key={card.id}>
+            <a
+              className="contact-method-link"
+              href={card.contactLink}
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noreferrer" : undefined}
+              aria-label={t("contactSection.openContact", {
+                contact: card.contact,
+              })}
+            >
+              <span className="contact-method-icon">
+                <img src={card.contactImage} alt="" />
+              </span>
+              <h3>{card.contact}</h3>
+            </a>
+
+            <p className="contact-method-description">{card.description}</p>
+
+            <div className="contact-value-row">
+              <span>{card.contactInfo}</span>
+
+              <button
+                type="button"
+                onClick={() => handleCopy(card)}
+                aria-label={t("contactSection.copyValue", {
+                  value: card.contactInfo,
+                })}
+                title={
+                  isCopied
+                    ? t("contactSection.copied")
+                    : t("contactSection.copy")
+                }
+              >
+                <i
+                  className={
+                    isCopied
+                      ? "fa-solid fa-clipboard-check"
+                      : "fa-regular fa-copy"
+                  }
+                  aria-hidden="true"
+                />
+                <span className="is-sr-only">
+                  {isCopied
+                    ? t("contactSection.copied")
+                    : t("contactSection.copy")}
+                </span>
+              </button>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  );
 }
 
 export default ContactCards;

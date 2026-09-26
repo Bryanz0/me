@@ -1,70 +1,79 @@
-import { useContext, useState } from "react";
-import { ThemeContext } from "../../contexts/Theme.context";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
-function WorkTabs ({works}){
+function getInitials(companyName) {
+  return companyName.split(/\s+/).map((word) => word.charAt(0)).join("").slice(0, 2).toUpperCase();
+}
 
-  const {theme} = useContext(ThemeContext);
+function getTechnologyNames(tools = []) {
+  return tools.flatMap((tool) => {
+    if (!Array.isArray(tool)) return [];
 
+    return [tool[0], ...tool.slice(2).filter(Array.isArray).map((nestedTool) => nestedTool[0])]
+      .filter((name) => typeof name === "string");
+  });
+}
 
-  const sortedWorks = works.slice().sort((a,b)=> b.id - a.id);
-  const [tabState, setTabState] = useState(sortedWorks[0]?.id);
+function WorkTabs({ works }) {
+  const { t } = useTranslation("global");
+  const sortedWorks = works.slice().sort((a, b) => b.id - a.id);
+  const [selectedId, setSelectedId] = useState(sortedWorks[0]?.id);
+  const selectedWork = sortedWorks.find((work) => work.id === selectedId) ?? sortedWorks[0];
 
-  const toogleTab = (index) => {
-        setTabState(index);
-  }
+  if (!selectedWork) return null;
 
+  const isCurrent = selectedWork.status === "current" || /currently|actualidad/i.test(selectedWork.time);
+  const technologies = getTechnologyNames(selectedWork.tools);
 
-  function renderTools(tools){
-    if (tools !== undefined){
-      return(
-        <p> <button className={"icn_code-"+theme}><i className="fa-solid fa-code"></i></button>
-          {
-            tools.map((tool) => (
-              <a key={tool[0]} style={{fontSize: "smaller"}} href={tool[1]}>{tool[0]} </a>
-            ))
-          }
+  return (
+    <div className="experience-layout">
+      <nav className="experience-company-list" aria-label={t("experienceSection.companyListLabel")}>
+        {sortedWorks.map((work) => {
+          const isSelected = selectedId === work.id;
+
+          return (
+            <button
+              key={work.id}
+              type="button"
+              className={isSelected ? "experience-company is-selected" : "experience-company"}
+              onClick={() => setSelectedId(work.id)}
+              aria-pressed={isSelected}
+            >
+              <span className="experience-company-logo" aria-hidden="true">
+                {work.logo ? <img src={work.logo} alt="" /> : getInitials(work.businessName)}
+              </span>
+              <span className="experience-company-copy">
+                <span className="experience-company-name">{work.businessName}</span>
+                <span className="experience-company-time">{work.time}</span>
+              </span>
+              {isSelected && <i className="fa-solid fa-chevron-right experience-company-chevron" aria-hidden="true"></i>}
+            </button>
+          );
+        })}
+      </nav>
+
+      <article className="experience-detail">
+        {isCurrent && <p className="experience-status">{t("experienceSection.current")}</p>}
+        <h3 className="experience-role">{selectedWork.charge}</h3>
+        <p className="experience-company-heading">
+          {selectedWork.companyUrl ? (
+            <a href={selectedWork.companyUrl} target="_blank" rel="noopener noreferrer" title={t("experienceSection.companyWebsite", { company: selectedWork.businessName })}>
+              {selectedWork.businessName} <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          ) : selectedWork.businessName}
         </p>
-      )
-    }
-  }
-
-
-  return(
-      <div className="section-content">
-        <div className="columns">
-          <div className="column is-2">
-            <div className="tabs my-tabs">
-              {
-                sortedWorks.map((work) => (
-                  <div key={work.id} className={tabState === work.id ? "tab-"+theme+" active" : "tab-"+theme} 
-                  onClick={()=> toogleTab(work.id)}>{work.bussinessName}</div>  
-                ))
-              }
-            </div>
-          </div>
-          <div className={"column auto text-color-"+theme}>
-            {
-              sortedWorks.map((work) => (
-                <div key={work.id} className={tabState === work.id ? "tab-content active-content" : "tab-content"}>
-                  <h2 className="text-code pad-bott">
-                    {work.charge + " - "} <span className={"text-color-primary-"+theme}>{work.bussinessName}</span>
-                  </h2>
-                  <p className="text-code pad-bott">{work.time}</p>
-                  <ul style={{paddingLeft: "1rem", paddingBottom: "1rem"}}>
-                    {
-                      work.tasks.map((task) => (
-                        <li key={task} className="text-code"><i className={"fa-regular fa-circle-check text-color-primary-"+theme}></i> 
-                        {" "+task}</li>
-                      ))
-                    }
-                  </ul>
-                    {renderTools(work.tools)}
-                </div>
-              ))
-            }        
-          </div>
+        <div className="experience-meta">
+          <span><i className="fa-regular fa-calendar" aria-hidden="true"></i>{selectedWork.time}</span>
+          {selectedWork.location && <span><i className="fa-solid fa-location-dot" aria-hidden="true"></i>{selectedWork.location}</span>}
         </div>
-      </div>
+        <p className="experience-description">{selectedWork.tasks.join(" ")}</p>
+        {technologies.length > 0 && (
+          <div className="experience-technologies" aria-label={t("experienceSection.technologiesLabel")}>
+            {technologies.map((technology) => <span key={technology} className="experience-chip">{technology}</span>)}
+          </div>
+        )}
+      </article>
+    </div>
   );
 }
 

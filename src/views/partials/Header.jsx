@@ -10,6 +10,7 @@ function Header() {
     const {theme} = useContext(ThemeContext);
 
     const {t} = useTranslation("global");
+    const cvUrl = `${import.meta.env.BASE_URL}${t("header.download-file")}`;
 
     const scrollToSection = (sectionId) =>{
         document.getElementById(sectionId).scrollIntoView({behavior: "smooth"});
@@ -33,7 +34,7 @@ function Header() {
                     <ToggleTheme />
                 </div>
 
-                <a className={"action_btn-"+theme} href={t("header.download-file")} target="_blank" download>
+                <a className={"action_btn-"+theme} href={cvUrl} download>
                     <i className="fa-regular fa-circle-down"></i> {t("header.download-button") }</a>
                 <div className={"toggle_btn-"+theme} id="toggle_btn">
                     <i className="fa-solid fa-bars"></i>
@@ -46,7 +47,7 @@ function Header() {
                     <li><a className={"a-"+theme} onClick={()=>scrollToSection('skills_section')}>{t("header.nav-bar.nav-link-3")}</a></li>
                     <li><a className={"a-"+theme} onClick={()=>scrollToSection('projects_section')}>{t("header.nav-bar.nav-link-4")}</a></li>
                     <li><a className={"a-"+theme} onClick={()=>scrollToSection('contact_section')}>{t("header.nav-bar.nav-link-5")}</a></li>
-                    <li><a className={"action_btn-"+theme} href="documents/CV_Bryan_Zambrano.pdf" target="_blank" download><i className="fa-regular fa-circle-down"></i> {t("header.download-button")}</a></li>
+                    <li><a className={"action_btn-"+theme} href={cvUrl} download><i className="fa-regular fa-circle-down"></i> {t("header.download-button")}</a></li>
                 </div>
             </div>
         </header>
